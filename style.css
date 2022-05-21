@@ -3,12 +3,16 @@
 	padding: 0;
 }
 
+body {
+	min-width: 1200px;
+}
+
 p {
-  margin-bottom: 0.7em;
+	margin-bottom: 0.7em;
 }
 
 p:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 @font-face {
