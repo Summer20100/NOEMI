@@ -223,14 +223,14 @@ span.visually-hidden {
 
 /* CONTENT.ASIDE.POSTS-LATESPOSTS */
 
-.posts-latestposts h4 {
+.post-latestposts__title {
 	text-align: center;
 	text-transform: uppercase;
 	color: #0f0d0e;
 	font-weight: bold;
 }
 
-.posts-latestposts h4::after {
+.post-latestposts__title::after {
 	content: "";
 	display: block;
 	border-top: solid #b59f5b 3px;
@@ -279,7 +279,7 @@ span.visually-hidden {
 	color: #888888;
 }
 
-.posts-latestposts__text h4 a {
+.posts-latestposts .posts-latestposts__text h4 a {
 	line-height: 18px;
 	text-align: left;
 	color: #000000;
@@ -288,7 +288,7 @@ span.visually-hidden {
 	display: block;
 }
 
-.posts-latestposts__text h4 a:hover {
+.posts-latestposts .posts-latestposts__text h4 a:hover {
 	color: #b59f5b;
 }
 
