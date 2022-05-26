@@ -5,6 +5,15 @@
 
 body {
 	min-width: 1200px;
+	font-family: OpenSans, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
 }
 
 p {
@@ -16,33 +25,29 @@ p:last-child {
 }
 
 @font-face {
-	font-family: "OpenSans-Bold";
-	src: url("fonts/OpenSans-Bold.woff");
+	font-family: OpenSans;
+	src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+	font-weight: 400;
+	font-style: normal;
 }
-
+  
 @font-face {
-	font-family: "OpenSans-Regular";
-	src: url("fonts/OpenSans-Regular.woff");
+	font-family: OpenSans;
+	src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+	font-weight: 700;
+	font-style: normal; 
 }
 
 /*______________________________________*/
 /* HEADER */
 
-.header {
-	height: 450px;
-}
-
 .header-banner {
 	background-image: url("images/header-banner.jpg");
 	background-position: center -235px;
 	width: 100%;
-	height: 450px;
 	background-size: cover;
 	position: relative;
 	z-index: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .header-banner::before {
@@ -82,19 +87,15 @@ span.visually-hidden {
 } 
 
 .menu a {
-	text-decoration: none;
 	color: #ffffff;
 }
 
 .menu ul>li {
-	list-style-type: none;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 13px;
-	font-family: "OpenSans-Regular", sans-serif;
 	line-height: 36px;
 	color: #ffffff;
-	font-weight: 400;
 	text-align: right;
 }
 
@@ -112,10 +113,11 @@ span.visually-hidden {
 	color: #ffffff;
 	font-size: 45px;
 	line-height: 75px;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 	text-align: center;
-	margin: 0 auto 126px auto;
+	margin: 0 auto;
+	padding: 140px 0 160px 0; 
+	display: block;
 } 
 
 /*______________________________________*/
@@ -158,18 +160,15 @@ span.visually-hidden {
 }
 
 .article-content__category ul>li {
-	list-style-type: none;
 	display: inline-block;
 	text-transform: uppercase;
 	padding-right: 16px; 
 	font-size: 14px;
 	color: #b59f5b;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
 .article-content__category a {
-	text-decoration: none;
 	color: #b59f5b;
 }
 
@@ -177,19 +176,17 @@ span.visually-hidden {
 	text-decoration: underline;
 }
 
-.article-content__title a {
+.article-content h1 a {
 	display: block;
 	font-size: 20px;
 	line-height: 24px;
 	color: #0f0d0e;
-	font-weight: 700;
+	font-weight: bold;
 	text-transform: uppercase;
-	font-family: "OpenSans-Bold", sans-serif;
 	margin: 5px 0 30px 0;
-	text-decoration: none;
 }
 
-.article-content__title a:hover {
+.article-content h1 a:hover {
 	color: #b59f5b;
 }
 
@@ -200,9 +197,7 @@ span.visually-hidden {
 .article-content__datatime {
 	font-size: 12px;
 	color: #888888;
-	font-weight: 400;
 	margin-right: 15px;
-	font-family: "OpenSans-Regular", sans-serif;
 }
 
 .article-content__author {
@@ -210,8 +205,7 @@ span.visually-hidden {
 	color: #000000;
 	max-width: 270px;
 	min-width: 200px;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
 .article-content__text {
@@ -219,8 +213,6 @@ span.visually-hidden {
 	font-size: 15px;
 	line-height: 22px;
 	color: #0f0d0e;
-	font-weight: 400;
-	font-family: "OpenSans-Regular", sans-serif;
 }
 
 /* CONTENT.ASIDE */
@@ -231,16 +223,14 @@ span.visually-hidden {
 
 /* CONTENT.ASIDE.POSTS-LATESPOSTS */
 
-.posts-latestposts__title {
+.posts-latestposts h4 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
 	color: #0f0d0e;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
-.posts-latestposts__title::after {
+.posts-latestposts h4::after {
 	content: "";
 	display: block;
 	border-top: solid #b59f5b 3px;
@@ -275,18 +265,9 @@ span.visually-hidden {
 	z-index: -1;
 }
 
-.posts-latestposts__imgODD {
+.posts-latestposts__img {
 	-o-object-position: left top;
 	   object-position: left top;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	width: 70px;
-	height: 70px;
-}
-
-.posts-latestposts__imgEVEN {
-	-o-object-position: -22px top;
-	   object-position: -22px top;
 	-o-object-fit: cover;
 	   object-fit: cover;
 	width: 70px;
@@ -296,22 +277,18 @@ span.visually-hidden {
 .posts-latestposts__data {
 	font-size: 12px;
 	color: #888888;
-	font-weight: 400;
-	font-family: "OpenSans-Regular", sans-serif;
 }
 
-.posts-latestposts__article a {
-	font-size: 14px;
+.posts-latestposts__text h4 a {
 	line-height: 18px;
+	text-align: left;
 	color: #000000;
-	font-weight: 700;
+	font-weight: bold;
 	text-transform: uppercase;
-	font-family: "OpenSans-Bold", sans-serif;
-	text-decoration: none;
 	display: block;
 }
 
-.posts-latestposts__article a:hover {
+.posts-latestposts__text h4 a:hover {
 	color: #b59f5b;
 }
 
@@ -337,8 +314,6 @@ span.visually-hidden {
 	font-size: 13px;
 	line-height: 40px;
 	color: #000000;
-	font-weight: 400;
-	font-family: "OpenSans-Regular", sans-serif;
 	border-radius: none;
 }
 
@@ -365,16 +340,14 @@ span.visually-hidden {
 	font-size: 0;
 }
 
-.subscribe__title {
+.subscribe h4 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
 	color: #0f0d0e;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
-.subscribe__title::after {
+.subscribe h4::after {
 	content: "";
 	display: block;
 	border-top: solid #b59f5b 3px;
@@ -386,9 +359,7 @@ span.visually-hidden {
 	font-size: 13px;
 	line-height: 40px;
 	color: #000000;
-	font-weight: 400;
-	font-family: "OpenSans-Regular", sans-serif;
-	width: 270px;
+	width: 100%;
 	height: 48px;
 	background-color: #f4f7f6;
 	padding: 0 16px;
@@ -404,15 +375,14 @@ span.visually-hidden {
 }
 
 .subscribe-button {
-	width: 270px;
+	width: 100%;
 	height: 48px;
 	background-color: #b59f5b;
 	border: none;
 	font-size: 14px;
 	line-height: 40px;
 	color: #ffffff;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
@@ -424,20 +394,17 @@ span.visually-hidden {
 
 .posts-tags {
 	width: 270px;
-	font-size: 0;
 	margin-top: 56px;
 }
 
-.posts-tags__title {
+.posts-tags h4 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
 	color: #0f0d0e;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
-.posts-tags__title::after {
+.posts-tags h4::after {
 	content: "";
 	display: block;
 	border-top: solid #b59f5b 3px;
@@ -445,23 +412,21 @@ span.visually-hidden {
 	margin: 10px auto 26px;
 }
 
-.posts-tags a {
-    text-decoration: none;
+.posts-tags ul>li {
     display: inline-block;
     text-transform: uppercase;
     text-align: left;
     font-size: 12px;
     color: #0f0d0e;
-    font-weight: 700;
-    font-family: "OpenSans-Bold", sans-serif;
-    padding: 0 14px;
+    font-weight: bold;
+    padding: 0 12px;
     margin: 0 10px 14px 0;
     outline: 3px solid #eeeeee;
     border-bottom: 3px solid #ffffff;
     border-top: 3px solid #ffffff;
 }
 
-.posts-tags a:hover {
+.posts-tags ul>li:hover {
 	background-color: rgba(244, 243, 241, 0);
 	border-bottom: 3px solid #b59f5b;
 }
@@ -473,16 +438,14 @@ span.visually-hidden {
 	margin-top: 45px;
 }
 
-.posts-categories__title {
+.posts-categories h4 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 14px;
 	color: #0f0d0e;
-	font-weight: 700;
-	font-family: "OpenSans-Bold", sans-serif;
+	font-weight: bold;
 }
 
-.posts-categories__title::after {
+.posts-categories h4::after {
 	content: "";
 	display: block;
 	border-top: solid #b59f5b 3px;
@@ -491,19 +454,16 @@ span.visually-hidden {
 }
 
 .posts-categories ul>li {
-	list-style-type: none;
 	display: block;
 	text-align: left;
 	font-size: 14px;
 	line-height: 46px;
 	color: #000000;
-	font-weight: 700;
-	font-family: "OpenSans-Regular", sans-serif;   
+	font-weight: bold;  
 	border-bottom:1px solid #eeeeee;
 }
 
 .category-name a {
-	text-decoration: none;
 	color: #000000;
 }
 
@@ -516,8 +476,7 @@ span.visually-hidden {
 	line-height: 41px;
 	vertical-align: top;
 	color: #b59f5b;
-	font-weight: 700;
-	font-family: "OpenSans-Regular", sans-serif; 
+	font-weight: bold;
 }
 
 /*______________________________________*/
@@ -531,7 +490,6 @@ span.visually-hidden {
 }
 
 .social {
-	height: 83px;
 	background-color: #f4f7f6;
 	display: flex;
 	justify-content: center;
@@ -540,24 +498,23 @@ span.visually-hidden {
 	margin-bottom: 74px;
 }
 
-.social a {
+.social ul>li {
 	margin-right: 78px;
+	display: inline-block;
 }
 
-.social a:last-child {
+.social ul>li:last-child {
 	margin-right: 0;
 }
 
 .copyrights {
 	font-size: 12px;
-	font-weight: 700;
-	font-family: "OpenSans-Regular", sans-serif;
+	font-weight: bold;
 	text-align: center;
 	position: relative;
 	margin-bottom: 40px;
 }
 
 .copyrights a {
-	text-decoration: none;
 	color: #999999;
 }
