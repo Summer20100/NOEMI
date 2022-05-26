@@ -279,7 +279,7 @@ span.visually-hidden {
 	color: #888888;
 }
 
-.posts-latestposts__text h4 a {
+.posts-latestposts__text a {
 	line-height: 18px;
 	text-align: left;
 	color: #000000;
@@ -288,7 +288,7 @@ span.visually-hidden {
 	display: block;
 }
 
-.posts-latestposts__text h4 a:hover {
+.posts-latestposts__text a:hover {
 	color: #b59f5b;
 }
 
