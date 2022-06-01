@@ -99,7 +99,7 @@ span.visually-hidden {
 	text-align: right;
 }
    
-   .menu ul>li:nth-child(n + 2) {
+.menu ul>li:nth-child(n + 2) {
 	margin-left: 31px;
 }
    
@@ -156,7 +156,6 @@ span.visually-hidden {
 	-o-object-position: -19px bottom;
 	   object-position: -19px bottom;
 	width: 380px;
-   /*  height: 294px; */
 }
    
 .article-content__category ul>li {
@@ -193,7 +192,7 @@ span.visually-hidden {
 	display: flex;
 }
    
-   .article-content__datatime {
+.article-content__datatime {
 	font-size: 12px;
 	color: #888888;
 	margin-right: 15px;
@@ -339,21 +338,6 @@ span.visually-hidden {
 	font-size: 0;
 }
    
-   /* .subscribe h4 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #0f0d0e;
-	font-weight: bold;
-   }
-   
-   .subscribe h4::after {
-	content: "";
-	display: block;
-	border-top: solid #b59f5b 3px;
-	width: 66px;
-	margin: 10px auto 21px;
-   } */
-   
 .subscribe-email {
 	font-size: 13px;
 	line-height: 40px;
@@ -395,22 +379,7 @@ span.visually-hidden {
 	width: 270px;
 	margin-top: 56px;
 }
-   
-   /* .posts-tags h4 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #0f0d0e;
-	font-weight: bold;
-   }
-   
-   .posts-tags h4::after {
-	content: "";
-	display: block;
-	border-top: solid #b59f5b 3px;
-	width: 66px;
-	margin: 10px auto 26px;
-   } */
-   
+
 .posts-tags ul>li {
 	display: inline-block;
 	text-transform: uppercase;
@@ -434,28 +403,13 @@ span.visually-hidden {
 	border-bottom: 3px solid #b59f5b;
 }
    
-   /* CONTENT.ASIDE.POST-CATEGORIES */
+/* CONTENT.ASIDE.POST-CATEGORIES */
    
 .posts-categories {
 	width: 270px;
 	margin-top: 45px;
 }
-   
-   /* .posts-categories h4 {
-	text-align: center;
-	text-transform: uppercase;
-	color: #0f0d0e;
-	font-weight: bold;
-   }
-   
-   .posts-categories h4::after {
-	content: "";
-	display: block;
-	border-top: solid #b59f5b 3px;
-	width: 66px;
-	margin: 10px auto 10px;
-   } */
-   
+
 .posts-categories ul>li {
 	display: block;
 	text-align: left;
@@ -492,7 +446,7 @@ span.visually-hidden {
 	box-sizing: border-box;
 }
    
-   .social {
+.social {
 	background-color: #f4f7f6;
 	display: flex;
 	justify-content: center;
@@ -501,12 +455,12 @@ span.visually-hidden {
 	margin-bottom: 74px;
 }
    
-   .social ul>li {
+.social ul>li {
 	margin-right: 78px;
 	display: inline-block;
 }
    
-   .social ul>li:last-child {
+.social ul>li:last-child {
 	margin-right: 0;
 }
    
