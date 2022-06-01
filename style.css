@@ -226,6 +226,7 @@ span.visually-hidden {
 	text-transform: uppercase;
 	color: #0f0d0e;
 	font-weight: bold;
+	font-size: 14px;
 }
    
 .title::after {
