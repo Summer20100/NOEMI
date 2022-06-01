@@ -278,6 +278,7 @@ span.visually-hidden {
 }
    
 .posts-latestposts__text h4 a {
+	font-size: 14px;
 	line-height: 18px;
 	text-align: left;
 	color: #000000;
