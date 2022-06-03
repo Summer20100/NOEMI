@@ -477,15 +477,15 @@ span.visually-hidden {
 }
    
 .twitter {
-	background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg");
+	background-image: url("images/twitter.png");
 }
    
 .pinterest {
-	background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg");
+	background-image: url("images/pinterest.png");
 }
    
 .tumblr {
-	background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+	background-image: url("images/tumblr.png");
 }
    
 .copyrights {
