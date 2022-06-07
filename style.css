@@ -153,8 +153,6 @@ span.visually-hidden {
 .article-img__banner {
 	-o-object-fit: cover;
 	   object-fit: cover;
-	-o-object-position: -19px bottom;
-	   object-position: -19px bottom;
 	width: 380px;
 }
    
